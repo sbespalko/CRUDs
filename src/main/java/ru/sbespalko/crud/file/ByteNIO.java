@@ -1,8 +1,8 @@
 package ru.sbespalko.crud.file;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.Files;
 
 public class ByteNIO extends AbstractFileNIO {
@@ -13,18 +13,18 @@ public class ByteNIO extends AbstractFileNIO {
 
 	@Override
 	public void write(String str) throws IOException {
-		try(BufferedWriter writer = Files.newBufferedWriter(file)){
-			writer.write(str);
+		try(OutputStream writer = Files.newOutputStream(file)){
+			writer.write(str.getBytes());
 		}
 	}
 
 	@Override
 	public String read() throws IOException {
 		StringBuilder readStr = new StringBuilder();
-		try(BufferedReader reader = Files.newBufferedReader(file)){
-			String line = null;
-			while ((line = reader.readLine()) != null){
-				readStr.append(line);
+		try(InputStream reader = Files.newInputStream(file)){
+			int ch;
+			while ((ch = reader.read()) != -1){
+				readStr.append((char)ch);
 			}
 		}
 		return readStr.toString();

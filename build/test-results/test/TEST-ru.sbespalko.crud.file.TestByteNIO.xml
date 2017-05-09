@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.sbespalko.crud.file.TestByteNIO" tests="4" skipped="1" failures="0" errors="0" timestamp="2017-05-09T16:23:30" hostname="sergey-Lenovo-B590" time="0.206">
+  <properties/>
+  <testcase name="testWrite" classname="ru.sbespalko.crud.file.TestByteNIO" time="0.094"/>
+  <testcase name="testRead" classname="ru.sbespalko.crud.file.TestByteNIO" time="0.106"/>
+  <testcase name="testCreate" classname="ru.sbespalko.crud.file.TestByteNIO" time="0.001"/>
+  <testcase name="testDelete" classname="ru.sbespalko.crud.file.TestByteNIO" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[ByteNIO testing!qwertyuiop[]asdfghjkl;'zxcvbnm,./
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
