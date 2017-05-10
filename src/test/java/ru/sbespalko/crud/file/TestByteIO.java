@@ -6,7 +6,7 @@ package ru.sbespalko.crud.file;
 import org.junit.Before;
 
 public class TestByteIO extends AbstractFileTest {
-	String fileName = "./FileTests/ByteIOTest.txt";
+	String fileName = "./ByteIOTest.txt";
 	CRUD fileWrapper = new ByteIO(fileName);
 	String testText = "ByteIO testing!qwertyuiop[]asdfghjkl;'zxcvbnm,./";
 	

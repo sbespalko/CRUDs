@@ -11,7 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestJdbcCrud {
-	String dbName = "./TestDB/test.db";
+	String dbName = "./test.db";
 	JdbcCrud dbCrud = new JdbcCrud("jdbc:sqlite:" + dbName);
 
 	@BeforeClass

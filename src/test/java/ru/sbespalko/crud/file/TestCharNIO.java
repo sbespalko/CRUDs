@@ -3,9 +3,9 @@ package ru.sbespalko.crud.file;
 import org.junit.Before;
 
 public class TestCharNIO extends AbstractFileTest {
-	String fileName = "./FileTests/CharNIOTest.txt";
+	String fileName = "./CharNIOTest.txt";
 	CRUD fileWrapper = new CharNIO(fileName);
-	String testText = "CharNIO testing!Ù˚‚‡qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+	String testText = "CharNIO testing!qwertyuiop[]asdfghjkl;'zxcvbnm,./";
 	
 	@Before
 	public void setter(){
