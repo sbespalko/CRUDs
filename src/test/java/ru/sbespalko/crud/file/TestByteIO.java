@@ -5,8 +5,6 @@ package ru.sbespalko.crud.file;
 
 import org.junit.Before;
 
-import ru.sbespalko.crud.CRUD;
-
 public class TestByteIO extends AbstractFileTest {
 	String fileName = "./FileTests/ByteIOTest.txt";
 	CRUD fileWrapper = new ByteIO(fileName);

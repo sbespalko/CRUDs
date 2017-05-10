@@ -3,8 +3,6 @@ package ru.sbespalko.crud.file;
 import java.io.File;
 import java.io.IOException;
 
-import ru.sbespalko.crud.CRUD;
-
 public abstract class AbstractFileIO implements CRUD {
 	protected String fileName;
 	protected File file;

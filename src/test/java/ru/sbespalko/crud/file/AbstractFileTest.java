@@ -1,13 +1,11 @@
 package ru.sbespalko.crud.file;
 
-import java.io.IOException;
-
 import org.junit.Assert;
-import org.junit.Ignore;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
-import ru.sbespalko.crud.CRUD;
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 abstract public class AbstractFileTest {
 
 	String fileName;
@@ -27,26 +25,24 @@ abstract public class AbstractFileTest {
 	}
 
 	@Test
-	public void testCreate() throws IOException {
+	public void test0Create() throws Exception {
 		fileWrapper.create();
 		Assert.assertTrue(fileWrapper.isExist());
 	}
-
 	@Test
-	public void testWrite() throws IOException {
+	public void test1Write() throws Exception {
 		fileWrapper.write(testText);
 	}
 
 	@Test
-	public void testRead() throws IOException {
+	public void test2Read() throws Exception {
 		String readStr = fileWrapper.read();
 		Assert.assertTrue(readStr.equals(testText));
 		System.out.println(readStr);
 	}
 
 	@Test
-	@Ignore
-	public void testDelete() throws IOException {
+	public void test3Delete() throws Exception {
 		fileWrapper.delete();
 		Assert.assertFalse(fileWrapper.isExist());
 	}

@@ -2,12 +2,10 @@ package ru.sbespalko.crud.file;
 
 import org.junit.Before;
 
-import ru.sbespalko.crud.CRUD;
-
 public class TestCharIO extends AbstractFileTest {
 	String fileName = "./FileTests/CharIOTest.txt";
 	CRUD fileWrapper = new CharIO(fileName);
-	String testText = "CharIO testing!qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+	String testText = "CharIO testing!Ù˚‚‡qwertyuiop[]asdfghjkl;'zxcvbnm,./";
 	
 	@Before
 	public void setter(){

@@ -5,8 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import ru.sbespalko.crud.CRUD;
-
 public abstract class AbstractFileNIO implements CRUD {
 	protected String fileName;
 	protected Path file;
