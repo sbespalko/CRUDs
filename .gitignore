@@ -1,5 +1,5 @@
 .*
 !.gitignore
 *.class
-/bin**
-/build**
+bin/
+build/
