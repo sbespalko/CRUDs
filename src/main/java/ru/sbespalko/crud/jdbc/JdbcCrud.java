@@ -21,7 +21,7 @@ public class JdbcCrud {
 	}
 
 	public void createTable() throws SQLException {
-		String sql = "CREATE TABLE test_table ( \n" + "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n"
+		String sql = "CREATE TABLE IF NOT EXISTS test_table ( \n" + "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n"
 				+ "name TEXT NOT NULL, \n" + "parameter REAL NOT NULL \n" + ");";
 		try (Connection conn = DriverManager.getConnection(url); Statement stmt = conn.createStatement()) {
 			stmt.execute(sql);
